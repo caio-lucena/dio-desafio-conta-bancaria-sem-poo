@@ -5,9 +5,6 @@ sair_do_sistema = False
 escolha = 0
 
 def mostrar_menu():
-    nome_banco =  "Dio Bank"
-    nome_banco.center(12, "*")
-
     menu = """
 
         Bem vindo à Dio Bank
