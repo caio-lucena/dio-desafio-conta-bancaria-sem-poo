@@ -2,7 +2,6 @@ saldo = 0.0
 limite_diario_saque = 3
 extrato = ""
 sair_do_sistema = False
-escolha = 0
 
 def mostrar_menu():
     menu = """
@@ -62,13 +61,13 @@ def sacar(valor):
     global saldo
     global limite_diario_saque
 
-    if(saldo < valor):
+    if (saldo < valor):
         print("Não há saldo suficiente")
-    elif limite_diario_saque == 0:
+    elif (limite_diario_saque == 0):
         print("Limite diário de operações de saque já foi atingido")
-    elif valor >=  500.0:
+    elif (valor >=  500.0):
         print("Valor superior ao limite de saque permitido")
-    elif valor < 0:
+    elif (valor < 0):
         print("Não é possível sacar valores negativos")
     else:
         saldo -= valor
@@ -80,7 +79,7 @@ def imprimir_extrato():
 
 try:
 
-    while (not sair_do_sistema):
+    while not sair_do_sistema:
         mostrar_menu()
 
 except:
