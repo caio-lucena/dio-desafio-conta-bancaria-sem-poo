@@ -68,6 +68,8 @@ def sacar(valor):
         print("Limite diário de operações de saque já foi atingido")
     elif valor >=  500.0:
         print("Valor superior ao limite de saque permitido")
+    elif valor < 0:
+        print("Não é possível sacar valores negativos")
     else:
         saldo -= valor
         limite_diario_saque -= 1
